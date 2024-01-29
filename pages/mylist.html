@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/mylist-style.css">
+    <link rel="web icon" type="png" href="/ghost.png">
+    <script src="https://kit.fontawesome.com/a3e23e5c24.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="/scripts/mylist.js"></script>
+    <title>My List</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <a href="/pages/homepage.html" id="hello">Thrills And Chills</a>
+            <li><a href="/pages/homepage.html">home</a></li>
+            <li><a href="/pages/Top_List.html">Top List</a></li>
+            <li><a href="/pages/subgenres.html">Subgenres</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
+            <li><a href="/pages/mylist.html" class="active">My List</a></li>
+            <li><a href="/pages/sign_up.html">sign up</a></li>
+            <li><a href="/pages/login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody id="movieListTableBody"></tbody>
+    </table>
+    <button onclick="clearMyList()" class="clear-button">Clear My
+        List</button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        function clearMyList() {
+            localStorage.removeItem('myList');
+            displayMyList();
+        }
+
+        function displayMyList() {
+            const myList = JSON.parse(localStorage.getItem('myList')) || [];
+            const tableBody = document.getElementById('movieListTableBody');
+            tableBody.innerHTML = myList.length
+                > 0 ? myList.map((title, index) => `<tr><td>${index + 1}
+                    </td><td>${title}</td></tr>`).join('')
+                : '<tr><td colspan="2">My List is empty.</td></tr>';
+        }
+
+        displayMyList();
+    </script>
+
+    <footer>
+        <p>see you later alligator</p>
+    </footer>
+</body>
+
+</html>

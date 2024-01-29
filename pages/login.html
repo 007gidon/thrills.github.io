@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="web icon" type="png" href="/ghost.png">
+    <script src="/scripts/yep.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="/path/to/sha256.js"></script>
+    <script src="/scripts/login.js"></script>
+    <title>Login</title>
+</head>
+
+<body class="body">
+    <nav class="menu">
+        <ul>
+            <a href="/pages/homepage.html" id="hello">Thrills And Chills</a>
+            <li><a href="/pages/homepage.html">home</a></li>
+            <li><a href="/pages/Top_List.html">Top List</a></li>
+            <li><a href="Subgenres.html">Subgenres</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
+            <li><a href="/pages/mylist.html">My List</a></li>
+            <li><a href="/pages/sign_up.html">sign up</a></li>
+            <li><a href="/pages/login.html" class="active">login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form>
+                <table border="0">
+                    <tr>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" id="username" name="username" placeholder="Username"
+                                    onkeypress="return validusername(event)">
+                                <span id="messUsername" class="td3"></span>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="password" id="password" name="password" placeholder="Password"
+                                    onkeypress="return validpassword(event)">
+                                <span id="messPassword" class="td3"></span>
+                            </div>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" onclick="login()" value="Login">
+                            <input type="button" onclick="myClear()" value="Clear">
+                            <input type="button" onclick="goToSignUpPage()" value="sign up">
+                        </td>
+                        <td id="messButton" class="td3"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        M.AutoInit();
+    </script>
+   
+
+   
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>see you later alligator</p>
+    </footer>
+</body>
+
+</html>

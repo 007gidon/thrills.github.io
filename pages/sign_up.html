@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sign up.css">
+    <link rel="web icon" type="png" href="/ghost.png">
+    <script src="/scripts/sign up.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>sign up</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <a href="/pages/homepage.html" id="hello">Thrills And Chills</a>
+            <li><a href="/pages/homepage.html">home</a></li>
+            <li><a href="/pages/Top_List.html">Top List</a></li>
+            <li><a href="Subgenres.html">Subgenres</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
+            <li><a href="/pages/mylist.html">My List</a></li>
+            <li><a href="/pages/sign_up.html" class="active">sign up</a></li>
+            <li><a href="/pages/login.html">login</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Sign Up</h1>
+        <form>
+            <table border="0">
+                <!-- <tr> -->
+                <!-- <td>Username</td> -->
+                <!-- <td> -->
+                <!-- <input type="text" id="username" name="username" onkeypress="return validusername(event)"> -->
+                <!-- </td> -->
+                <!-- <td id="messUsername" class="td3"></td> -->
+                <!-- </tr> -->
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="username" name="username" onkeypress="return validusername(event)">
+                            <label for="username">Username</label>
+                            <span id="messUsername" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="firstname" name="firstname" class="validate"
+                                onkeypress="return validfirstname(event)">
+                            <label for="firstname">First Name</label>
+                            <span id="messFirstname" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="lastname" name="lastname" class="validate"
+                                onkeypress="return validlastname(event)">
+                            <label for="lastname">Family Name</label>
+                            <span id="messLastname" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="email" id="mail" name="mail" class="validate"
+                                onkeypress="return validemail(event)">
+                            <label for="mail">Gmail</label>
+                            <span id="messMail" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select id="birth" name="birth" class="validate">
+                                <option value="" disabled selected>Select Birth Year</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                            </select>
+                            <label for="birth">Birth-Date</label>
+                            <span id="messBirth" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label>Gender</label>
+                            <br><br>
+                            <p>
+                                <label>
+                                    <input type="radio" id="radio1" name="radio1" value="1" />
+                                    <span>Male</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="radio" id="radio2" name="radio1" value="2" />
+                                    <span>Female</span>
+                                </label>
+                            </p>
+                            <span id="messRadioGender" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s3">
+                            <select id="phone" name="phone" class="validate">
+                                <option value="" disabled>Select Area Code</option>
+                                <option value="053">053</option>
+                                <option value="054">054</option>
+                                <option value="055">055</option>
+                                <option value="058">058</option>
+                                <option value="059">059</option>
+                            </select>
+                            <label for="phone">Area Code</label>
+                        </div>
+                        <div class="input-field col s1" style="margin-top: 20px; text-align: center;">-</div>
+                        <div class="input-field col s8">
+                            <input type="text" id="number" name="number" class="validate">
+                            <label for="number">Phone Number</label>
+                            <span id="messNumber" class="td3"></span>
+                        </div>
+                    </div>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="city" name="city" onkeypress="return validcity(event)"
+                                class="validate">
+                            <label for="city">City</label>
+                            <span id="messCity" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <tr>
+                <tr>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label>Hobbies</label>
+                            <br><br>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="hob1" name="hobbies[]" value="Chess" />
+                                    <span>Chess</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="hob2" name="hobbies[]" value="Gaming" />
+                                    <span>Gaming</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="hob3" name="hobbies[]" value="Football" />
+                                    <span>Football</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="hob4" name="hobbies[]" value="Reading" />
+                                    <span>Reading</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="hob5" name="hobbies[]" value="Movies" />
+                                    <span>Movies</span>
+                                </label>
+                            </p>
+                            <span id="messHobbies" class="td3"></span>
+                        </div>
+                    </div>
+                </tr>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="password" id="pass1" name="pass1" onkeypress="return validpass1(event)"
+                            class="validate">
+                        <label for="pass1">Password</label>
+                        <span id="messPass1" class="td3"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type="password" id="pass2" name="pass2" onkeypress="return validpass2(event)"
+                            class="validate">
+                        <label for="pass2">Re-Password</label>
+                        <span id="messPass2" class="td3"></span>
+                    </div>
+                </div>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="myCheck()" value="check">
+                        <input type="button" onclick="myClear()" value="clear">
+                        <input type="button" onclick="goToLoginPage()" value="Go to Login">
+                    </td>
+                    <td id="messButton" class="td3"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        M.AutoInit();
+    </script>
+    <!-- Include the SHA-256 library -->
+    <script src="/path/to/sha256.js"></script>
+
+    <!-- Include your JavaScript file -->
+    <script src="/scripts/sign_up.js"></script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>see you later alligator</p>
+    </footer>
+</body>
+
+</html>

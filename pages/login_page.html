@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/sign up.css">
+    <link rel="web icon" type="png" href="/ghost.png">
+    <script src="/scripts/sign up.js"></script>
+    <title>login</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <a href="/pages/homepage.html" id="hello">Thrills And Chills</a>
+            <li><a href="/pages/homepage.html">home</a></li>
+            <li><a href="/pages/Top_List.html">Top List</a></li>
+            <li><a href="/pages/subgenres.html">Subgenres</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
+            <li><a href="/pages/mylist.html">My List</a></li>
+            <li><a href="/pages/sign_up.html" >sign up</a></li>
+            <li><a href="/pages/login.html" class="active">login</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>טופס רישום</h1>
+        <form dir="rtl">
+            <table border="0">
+                <tr>
+                    <td>שם משתמש</td>
+                    <td>
+                        <input type="text" id="username" name="username" onkeypress="return validusername(event)">
+                    </td>
+                    <td id="messUsername" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>שם פרטי</td>
+                    <td>
+                        <input type="text" id="firstname" name="firstname" onkeypress="return validfirstname(event)">
+                    </td>
+                    <td id="messFirstname" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>שם משפחה</td>
+                    <td>
+                        <input type="text" id="lastname" name="lastname" onkeypress="return validlastname(event)">
+                    </td>
+                    <td id="messLastname" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>שם דוא"ל</td>
+                    <td>
+                        <input type="text" id="mail" name="mail" onkeypress="return validemail(event)">
+                    </td>
+                    <td id="messMail" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>שנת לידה</td>
+                    <td>
+                        <select id="birth" name="birth">
+                            <option value="053">2000</option>
+                            <option value="054">2001</option>
+                            <option value="055">2002</option>
+                            <option value="058">2003</option>
+                            <option value="059">2004</option>
+                            <option value="059">2005</option>
+                            <option value="059">2006</option>
+                            <option value="059">2007</option>
+                            <option value="059">2008</option>
+                            <option value="059">2009</option>
+                        </select>
+                    </td>
+                    <td id="messBirth" class="td3"></td>
+                </tr>
+                <!-- <script>
+            var selectElement = document.getElementById("birth");
+            var currentYear = new Date().getFullYear();
+            var startYear = 1960;
+        
+            for (var year = currentYear; year >= startYear; year--) {
+                var option = document.createElement("option");
+                option.value = year;
+                option.textContent = year;
+                selectElement.appendChild(option);
+            }
+        </script> -->
+                <tr>
+                    <td>מין</td>
+                    <td>
+                        <input type="radio" id="radio1" name="radio1" value="1">זכר
+                        <br>
+                        <input type="radio" id="radio2" name="radio1" value="2">נקבה
+                    </td>
+                    <td id="messRadioGender" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>טלפון</td>
+                    <td>
+                        <input type="number" id="number" name="number" style="width: 105px;">
+                        <span>-</span>
+                        <select id="phone" name="phone">
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="058">058</option>
+                            <option value="059">059</option>
+                        </select>
+                    </td>
+                    <td id="messNumber" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>עיר מגורים</td>
+                    <td>
+                        <input type="text" id="city" name="city" onkeypress="return validcity(event)">
+                    </td>
+                    <td id="messCity" class="td3"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>תחביבים</td>
+                    <td>
+                        <input type="checkbox" id="hob1" name="radio1" value="1">שחמט<br>
+                        <input type="checkbox" id="hob2" name="radio2" value="2">מחשבים<br>
+                        <input type="checkbox" id="hob3" name="radio3" value="3">כדורגל<br>
+                        <input type="checkbox" id="hob4" name="radio4" value="4">שחיה<br>
+                        <input type="checkbox" id="hob5" name="radio5" value="5">קריאה<br>
+                    </td>
+                    <td id="messHobbies" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>
+                        <input type="password" id="pass1" name="pass1" onkeypress="return validpass1(event)">
+                    </td>
+                    <td id="messPass1" class="td3"></td>
+                </tr>
+                <tr>
+                    <td>repassword</td>
+                    <td>
+                        <input type="password" id="pass2" name="pass2" onkeypress="return validpass2(event)">
+                    </td>
+                    <td id="messPass2" class="td3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="myCheck()" value="check">
+                        <input type="button" onclick="myClear()" value="clear">
+                    </td>
+                    <td id="messButton" class="td3"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>see you later alligator</p>
+    </footer>
+</body>
+
+</html>

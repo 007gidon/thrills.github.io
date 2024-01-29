@@ -1,0 +1,114 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(/pictures/itwallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav.menu {
+    display: flex;
+    background-color: transparent !important;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+
+.menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+a.active {
+    background: #800000;
+}
+
+#hello {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 40px;
+    text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.8);
+    float: left;
+    margin-right: 100px;
+    transition: 0.5s;
+}
+
+#hello:hover {
+    background: transparent;
+    /* Set the background color to whatever you want */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+#hello::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #c42525;
+    font-family: initial;
+}
+
+.menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: #222;
+    color: #FF5733;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    /* Add a gradient background */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    /* Outer glow */
+    color: white;
+}
+
+thead {
+    background: linear-gradient(to bottom, #ff3700, #800000);
+    /* Gradient header */
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle border */
+}
+
+tbody tr:hover {
+    background-color: #c42525;
+    box-shadow: none;
+    transition: 0.8s;
+}
+
+.clear-button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #ff4500;
+}

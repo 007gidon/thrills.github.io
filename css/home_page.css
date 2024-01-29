@@ -1,0 +1,333 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url(/pictures/itwallpaper2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: #000; */
+  transition: 0.7s ease;
+  /* Add smooth transition for background image */
+}
+
+
+nav.menu {
+  display: flex;
+  background-color: transparent !important;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+.menu a:hover {
+  background: #FF4500;
+  color: #000;
+  font-size: 105%;
+  transition: 0.5s;
+}
+
+a.active {
+  background: #800000;
+  margin-bottom: 0;
+}
+
+#hello {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 40px;
+  text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.8);
+  float: left;
+  margin-right: 100px;
+  transition: 0.5s;
+}
+
+#hello::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  color: #c42525;
+  font-family: initial;
+}
+
+#hello:hover {
+  background: transparent;
+  /* Set the background color to whatever you want */
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: url(/pictures/it-bright.jpg) no-repeat center/cover fixed; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* overflow: hidden; */
+  /* transform: translate3d(0, 0, 0); */
+  /* transition: 1.5s ease-in-out; */
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner .content {
+  position: relative;
+  max-width: 550px;
+  display: none;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.content.active {
+  display: block;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.IT {
+  position: absolute;
+  bottom: 140px;
+  width: 250px;
+  height: 150px;
+}
+
+.evil_dead {
+  position: absolute;
+  bottom: 150px;
+  width: 250px;
+  height: 150px;
+}
+
+.witch {
+  position: absolute;
+  bottom: 110px;
+  width: 200px;
+  height: 160px;
+}
+
+.martyrs {
+  position: absolute;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.scream {
+  position: absolute;
+  bottom: 120px;
+  width: 200px;
+  height: 150px;
+}
+
+.blair {
+  position: absolute;
+  bottom: 140px;
+  width: 200px;
+  height: 200px;
+}
+
+.x {
+  position: absolute;
+  bottom: 140px;
+  width: 150px;
+  height: 150px;
+}
+
+h4 span:last-child::after {
+  content: ' \2605';
+  color: gold;
+}
+
+:root {
+  --primary: #ff3700;
+}
+
+.banner .content h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 180px;
+}
+
+span {
+  padding: 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+span:last-child {
+  border-right: none;
+}
+
+.banner .content h4 span i {
+  background-color: #ff0000;
+  color: rgb(206, 193, 193);
+}
+
+.banner .content p {
+  color: rgb(248, 224, 181);
+}
+
+.banner .content .button {
+  position: relative;
+}
+
+.banner .content .button a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: var(--primary);
+  color: wheat;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.banner .content .button a:nth-child(2) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .content .button a:hover:nth-child(2) {
+  background: var(--primary)
+}
+
+.banner .content .button a:nth-child(1) {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .content .button a:hover:nth-child(1) {
+  background: var(--primary)
+}
+
+.banner .carousel-box {
+  position: relative;
+  min-width: 500px;
+  display: flex;
+  /* margin-left: -20px;  */
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+
+.carousel {
+  position: relative;
+  height: 550px;
+  perspective: 1500px;
+}
+
+.carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .carousel-item img {
+  max-width: 235px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.play {
+  position: absolute;
+  bottom: 70px;
+  left: 100px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer !important;
+  transition: 0.3s;
+}
+
+.play:hover {
+  color: var(--primary);
+}
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 100;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.trailer video {
+  max-width: 900px;
+  outline: none;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 30px;
+}
+
+footer {
+  background-color: #222;
+  color: #FF5733;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  font-size: 25px;
+}

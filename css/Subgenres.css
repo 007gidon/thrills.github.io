@@ -1,0 +1,139 @@
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(/pictures/itwallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  nav.menu {
+    display: flex;
+    background-color: transparent !important;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+  }
+
+  .menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+  }
+
+  a.active {
+    background: #800000;
+  }
+
+  #hello {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 40px;
+    text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.8);
+    float: left;
+    margin-right: 100px;
+    transition: 0.6s;
+  }
+
+  #hello:hover {
+    background: transparent;
+    /* Set the background color to whatever you want */
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+
+  #hello::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #c42525;
+    font-family: initial;
+  }
+
+  .menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+  }
+
+  /* .box h1 { */
+    /* text-align: center; */
+    /* color: #fff; */
+    /* margin-top: 2px; */
+    /* font-size: 50px; */
+    /* color: #800000; */
+    /* text-shadow: 8px 2px 30px rgba(0, 0, 0, 0.8); */
+  /* } */
+
+  /* .box h1 { */
+    /* text-align: center; */
+    /* color: #fff; */
+    /* margin-top: 1px; */
+    /* font-size: 50px; */
+    /* font-family: 'Your Preferred Font', sans-serif; */
+    /* text-shadow: 0 0 10px rgba(255, 69, 0, 0.8);  */
+  /* } */
+/*    */
+
+  .box h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Your Preferred Font', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #800000, #fd662f);
+    /* Adjust colors as needed */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .box {
+    width: 1120px;
+    /* height: 600px; */
+    padding: 20px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+  }
+
+  .poster1,
+  .poster2,
+  .poster3,
+  .poster4,
+  .poster5,
+  .poster6,
+  .poster7 {
+    width: 150px;
+    height: 210px;
+    position: relative;
+    border-radius: 3px;
+  }
+
+  .box a {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  .box a:hover {
+    cursor: pointer;
+    transform: scale(1.13);
+    transition: 0.6s;
+    z-index: 2;
+    /* Bring the hovered element to the front */
+  }
+
+  footer {
+    background-color: #222;
+    color: #FF5733;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }

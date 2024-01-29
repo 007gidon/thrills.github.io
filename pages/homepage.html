@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home_page.css">
+    <link rel="web icon" type="png" href="/ghost.png">
+    <script src="https://kit.fontawesome.com/a3e23e5c24.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>homepage</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <a href="/pages/homepage.html" id="hello">Thrills And Chills</a>
+            <li><a href="/pages/homepage.html" class="active">home</a></li>
+            <li><a href="/pages/Top_List.html">Top List</a></li>
+            <li><a href="/pages/Subgenres.html">Subgenres</a></li>
+            <li><a href="/pages/about.html">about</a></li>
+            <li><a href="/pages/contact.html">contact</a></li>
+            <li><a href="/pages/mylist.html">My List</a></li>
+            <li><a href="/pages/sign_up.html">sign up</a></li>
+            <li><a href="/pages/login.html">login</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="content itwallpaper1 active">
+            <img src="/pictures/R.png" alt="" class="IT" />
+            <h4>
+                <span>2017</span><span><i>12+</i></span><span>2h 7m</span>
+                <span>supernatural</span><span>7.3 (IMBD)</span>
+            </h4>
+            <p>
+                A group of bullied kids band together to destroy a shape-shifting monster, which
+                disguises itself as a clown and preys on the children of Derry, their small town.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/it_2017.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('IT')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+        <div class="content martyrs_poster">
+            <img src="/pictures/martyrs_logo.png" alt="" class="martyrs" />
+            <h4>
+                <span>2008</span><span><i>18+</i></span><span>1h 39m</span>
+                <span>Psychological</span><span>7.0(IMBD)</span>
+            </h4>
+            <p>
+                A woman seeking revenge for her childhood tormentor, along with an abused friend, embarks on a
+                horrifying journey into a hellish realm of depravity.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/martyrs.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('Martyrs')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content pearl-poster">
+            <img src="/pictures/pearl-title.png" alt="" class="IT" />
+            <h4>
+                <span>2022</span><span><i>12+</i></span><span>1h 43m</span>
+                <span>Slasher</span><span>7.0(IMBD)</span>
+            </h4>
+            <p>
+                In 1918, a young woman on the brink of madness pursues stardom in a desperate attempt to escape the
+                drudgery, isolation, and lovelessness of life on her parents' farm.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/pearl.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('Pearl')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content the_witch_poster2">
+            <img src="/pictures/the witch-logo.png" alt="" class="witch" />
+            <h4>
+                <span>2015</span><span><i>14+</i></span><span>1h 32m</span>
+                <span>Folk</span><span>7.0(IMBD)</span>
+            </h4>
+            <p>
+                In 1918, a young woman on the brink of madness pursues stardom in a desperate attempt to escape
+                drudgery, isolation, and lovelessness of life on her parents' farm.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/the witch.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('Witch')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content blair_witch_poster">
+            <img src="/pictures/blair_witch_logo.png" alt="" class="blair" />
+            <h4>
+                <span>2016</span><span><i>12+</i></span><span>1h 29m</span>
+                <span>Found Footage</span><span>5.0(IMBD)</span>
+            </h4>
+            <p>
+                After discovering a video showing what he believes to be his vanished sister, James and a group
+                of friends head to the forest believed to be inhabited by the Blair Witch.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/blair witch.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('Blair Witch')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content scream_poster">
+            <img src="/pictures/scream_title.png" alt="" class="scream" />
+            <h4>
+                <span>1996</span><span><i>12+</i></span><span>1h 51m</span>
+                <span>Slasher</span><span>7.4(IMBD)</span>
+            </h4>
+            <p>
+                A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her
+                and her friends by using scary movies as part of a deadly game.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/scary movie.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Play</a>
+                <a href="#" onclick="addToMyList('scream')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content evil_dead(2013)_poster">
+            <img src="/pictures/evil_dead(2013)_logo2.png" alt="" class="evil_dead" />
+            <h4>
+                <span>2013</span><span><i>17+</i></span><span>1h 31m</span>
+                <span>Possesion</span><span>6.5(IMBD)</span>
+            </h4>
+            <p>
+                Five friends head to a remote cabin, where the discovery of a Book of the Dead leads them to unwittingly
+                summon up demons living in the nearby woods.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/evil dead 2013.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="#" onclick="addToMyList('evil_dead')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="content x-poster2">
+            <img src="/pictures/x_logo.png" alt="" class="x" />
+            <h4>
+                <span>2022</span><span><i>15+</i></span><span>1h 45m</span>
+                <span>Slasher</span><span>6.5(IMBD)</span>
+            </h4>
+            <p>
+                In 1979, a group of young filmmakers set out to make an adult film in rural Texas, but when the
+                elderly hosts catch them in the act, The cast fights for survival.
+            </p>
+            <div class="button">
+                <a href="/pages/movies_pages/x.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Play</a>
+                <a href="#" onclick="addToMyList('x')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
+                    List</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/it-bright.jpg', 'itwallpaper1','/pictures/IT - Official Teaser Trailer.mp4');">
+                    <img src="/pictures/itwallpaper1.jpg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/martyrs wallpaper2.jpg', 'martyrs_poster', '/pictures/Martyrs   Official Trailer   2008   Horror.mp4');">
+                    <img src="/pictures/martyrs_poster.jpeg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/witch_wallpaper.jpg', 'the_witch_poster2', '/pictures/The Witch   Official Trailer HD   A24.mp4');">
+                    <img src="/pictures/the_witch_poster2.jpeg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/blair_witch_wallpaper.jpg', 'blair_witch_poster','/pictures/Blair Witch (2016 Movie) - Official Trailer.mp4');">
+                    <img src="/pictures/blair_witch_poster.jpeg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/scream_wallpaper1.jpg', 'scream_poster', '/pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4');">
+                    <img src="/pictures/scream_poster.jpeg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/evil_dead(2013)_wallpaper2.jpg', 'evil_dead(2013)_poster', '/pictures/Evil Dead (2013) - Official Trailer (HD).mp4');">
+                    <img src="/pictures/evil_dead(2013)_poster.jpeg" alt="">
+                </div>
+                <div class="carousel-item"
+                    onclick="changeBG('/pictures/x_wallpaper1.jpg', 'x-poster2', '/pictures/X   Official Trailer HD   A24.mp4');">
+                    <img src="/pictures/x_poster2.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo();">
+            <i class="fa-solid fa-circle-play" aria-hidden="true">watch trailer</i>
+        </a>
+    </div>
+
+    <div class="trailer" data-movie="IT">
+        <video class="video" src="/pictures/IT - Official Teaser Trailer.mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+    <div class="trailer" data-movie="martyrs">
+        <video class="video" src="/pictures/Martyrs   Official Trailer   2008   Horror.mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+    <div class="trailer" data-movie="the witch">
+        <video class="video" src="/pictures/The Witch   Official Trailer HD   A24.mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+    <div class="trailer" data-movie="blair witch">
+        <video class="video" src="/pictures/Blair Witch (2016 Movie) - Official Trailer.mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+   <div class="trailer" data-movie="scream">
+       <video class="video" src="/pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4" muted controls autoplay></video>
+       <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+   </div>
+    <div class="trailer" data-movie="evil_dead">
+        <video class="video" src="/pictures/Evil Dead (2013) - Official Trailer (HD).mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+    <div class="trailer" data-movie="x">
+        <video class="video" src="/pictures/X   Official Trailer HD   A24.mp4" muted controls autoplay></video>
+        <img class="close" src="/pictures/close.png" alt="" onclick="toggleVideo();" />
+    </div>
+    <!-- Add similar blocks for other movies with unique video sources -->
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <script src="/scripts/master.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <footer>
+        <p>see you later alligator</p>
+    </footer>
+</body>
+
+</html>
