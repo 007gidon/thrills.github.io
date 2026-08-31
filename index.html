@@ -101,7 +101,8 @@
                 of friends head to the forest believed to be inhabited by the Blair Witch.
             </p>
             <div class="button">
-                <a href="pages/movies_pages/blair witch.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="pages/movies_pages/blair witch.html"><i class="fa-solid fa-play"
+                        aria-hidden="true"></i>Page</a>
                 <a href="#" onclick="addToMyList('Blair Witch')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
                     List</a>
             </div>
@@ -133,7 +134,8 @@
                 summon up demons living in the nearby woods.
             </p>
             <div class="button">
-                <a href="pages/movies_pages/evil dead 2013.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
+                <a href="pages/movies_pages/evil dead 2013.html"><i class="fa-solid fa-play"
+                        aria-hidden="true"></i>Page</a>
                 <a href="#" onclick="addToMyList('evil_dead')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
                     List</a>
             </div>
@@ -149,7 +151,7 @@
                 elderly hosts catch them in the act, The cast fights for survival.
             </p>
             <div class="button">
-                <a href="pages/movies_pages/x.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Play</a>
+                <a href="pages/movies_pages/x.html"><i class="fa-solid fa-play" aria-hidden="true"></i>Page</a>
                 <a href="#" onclick="addToMyList('x')"><i class="fa-solid fa-plus" aria-hidden="true"></i>My
                     List</a>
             </div>
@@ -157,82 +159,84 @@
         <div class="carousel-box">
             <div class="carousel">
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/it-bright.jpg', 'itwallpaper1','/pictures/IT - Official Teaser Trailer.mp4');">
+                    onclick="changeBG('pictures/it-bright.jpg', 'itwallpaper1','pictures/IT - Official Teaser Trailer.mp4');">
                     <img src="pictures/itwallpaper1.jpg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/martyrs wallpaper2.jpg', 'martyrs_poster', '/pictures/Martyrs   Official Trailer   2008   Horror.mp4');">
+                    onclick="changeBG('pictures/martyrs wallpaper2.jpg', 'martyrs_poster', 'pictures/Martyrs   Official Trailer   2008   Horror.mp4');">
                     <img src="pictures/martyrs_poster.jpeg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/witch_wallpaper.jpg', 'the_witch_poster2', '/pictures/The Witch   Official Trailer HD   A24.mp4');">
+                    onclick="changeBG('pictures/witch_wallpaper.jpg', 'the_witch_poster2', 'pictures/The Witch   Official Trailer HD   A24.mp4');">
                     <img src="pictures/the_witch_poster2.jpeg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/blair_witch_wallpaper.jpg', 'blair_witch_poster','/pictures/Blair Witch (2016 Movie) - Official Trailer.mp4');">
+                    onclick="changeBG('pictures/blair_witch_wallpaper.jpg', 'blair_witch_poster','pictures/Blair Witch (2016 Movie) - Official Trailer.mp4');">
                     <img src="pictures/blair_witch_poster.jpeg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/scream_wallpaper1.jpg', 'scream_poster', '/pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4');">
+                    onclick="changeBG('pictures/scream_wallpaper1.jpg', 'scream_poster', 'pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4');">
                     <img src="pictures/scream_poster.jpeg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/evil_dead(2013)_wallpaper2.jpg', 'evil_dead(2013)_poster', '/pictures/Evil Dead (2013) - Official Trailer (HD).mp4');">
+                    onclick="changeBG('pictures/evil_dead(2013)_wallpaper2.jpg', 'evil_dead(2013)_poster', 'pictures/Evil Dead (2013) - Official Trailer (HD).mp4');">
                     <img src="pictures/evil_dead(2013)_poster.jpeg" alt="">
                 </div>
                 <div class="carousel-item"
-                    onclick="changeBG('/pictures/x_wallpaper1.jpg', 'x-poster2', '/pictures/X   Official Trailer HD   A24.mp4');">
+                    onclick="changeBG('pictures/x_wallpaper1.jpg', 'x-poster2', 'pictures/X   Official Trailer HD   A24.mp4');">
                     <img src="pictures/x_poster2.jpeg" alt="">
                 </div>
             </div>
         </div>
-        <a href="#" class="play" onclick="toggleVideo();">
-            <i class="fa-solid fa-circle-play" aria-hidden="true">watch trailer</i>
-        </a>
-    </div>
 
-    <div class="trailer" data-movie="IT">
-        <video class="video" src="pictures/IT - Official Teaser Trailer.mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-    <div class="trailer" data-movie="martyrs">
-        <video class="video" src="pictures/Martyrs   Official Trailer   2008   Horror.mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-    <div class="trailer" data-movie="the witch">
-        <video class="video" src="pictures/The Witch   Official Trailer HD   A24.mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-    <div class="trailer" data-movie="blair witch">
-        <video class="video" src="pictures/Blair Witch (2016 Movie) - Official Trailer.mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-   <div class="trailer" data-movie="scream">
-       <video class="video" src="pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4" muted controls autoplay></video>
-       <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-   </div>
-    <div class="trailer" data-movie="evil_dead">
-        <video class="video" src="pictures/Evil Dead (2013) - Official Trailer (HD).mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-    <div class="trailer" data-movie="x">
-        <video class="video" src="pictures/X   Official Trailer HD   A24.mp4" muted controls autoplay></video>
-        <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
-    </div>
-    <!-- Add similar blocks for other movies with unique video sources -->
+        <div class="trailer" data-movie="IT">
+            <video class="video" src="pictures/IT - Official Teaser Trailer.mp4" muted controls autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="martyrs">
+            <video class="video" src="pictures/Martyrs   Official Trailer   2008   Horror.mp4" muted controls
+                autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="the witch">
+            <video class="video" src="pictures/The Witch   Official Trailer HD   A24.mp4" muted controls
+                autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="blair witch">
+            <video class="video" src="pictures/Blair Witch (2016 Movie) - Official Trailer.mp4" muted controls
+                autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="scream">
+            <video class="video"
+                src="pictures/Scream   Official Trailer (HD) - Neve Campbell, Courteney Cox, Drew Barrymore   Miramax.mp4"
+                muted controls autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="evil_dead">
+            <video class="video" src="pictures/Evil Dead (2013) - Official Trailer (HD).mp4" muted controls
+                autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <div class="trailer" data-movie="x">
+            <video class="video" src="pictures/X   Official Trailer HD   A24.mp4" muted controls autoplay></video>
+            <img class="close" src="pictures/close.png" alt="" onclick="toggleVideo();" />
+        </div>
+        <!-- Add similar blocks for other movies with unique video sources -->
 
-    <script>
-        $(document).ready(function () {
-            $('.carousel').carousel();
-        });
-    </script>
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel();
+            });
+        </script>
 
-    <script src="scripts/master.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="scripts/master.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <footer>
-        <p>see you later alligator</p>
-    </footer>
+        <footer>
+            <p>see you later alligator</p>
+        </footer>
 </body>
 
 </html>
