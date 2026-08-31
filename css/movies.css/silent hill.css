@@ -1,0 +1,223 @@
+/* Set the font family and background image for the entire body */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(/pictures/silent\ hill\ wallpaper2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Style for the navigation menu */
+nav.menu {
+    display: flex;
+    background-color: transparent !important; /* Set transparent background for navigation menu */
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Sticky navigation at the top of the page */
+    top: 0;
+    z-index: 101; /* Ensure the navigation is above other elements */
+}
+
+/* Style for menu links on hover */
+.menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+/* Styling for a specific element with ID 'hello' */
+#hello {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 40px;
+    text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.8);
+    float: left;
+    margin-right: 100px;
+    transition: 0.5s;
+}
+
+/* Styling on hover for the 'hello' element */
+#hello:hover {
+    background: transparent;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Styling for the first letter of the 'hello' element */
+#hello::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    color: #c42525;
+    font-family: initial;
+}
+
+/* Styling on hover for menu links (repeated) */
+.menu a:hover {
+    background: #FF4500;
+    color: #000;
+    font-size: 105%;
+    transition: 0.5s;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #222;
+    color: #FF5733;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+/* Styling for a container with class 'box' */
+.box {
+    width: 1120px;
+    padding: 20px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+/* Styling for a nested container with class 'box2' inside 'box' */
+.box .box2 {
+    color: white;
+    padding-right: 15px;
+}
+
+/* Styling for images inside an element with class 'picture' */
+.picture img {
+    width: 225px;
+    height: 300px;
+    padding-left: 15px;
+    padding-top: 25px;
+    transition: 0.8s;
+}
+
+/* Styling for image hover effect */
+.picture img:hover {
+    cursor: pointer;
+    transform: scale(1.13);
+    transition: 0.6s;
+}
+
+/* Styling for an element with ID 'img' */
+#img {
+    float: left;
+    padding-right: 15px;
+}
+
+/* Styling for heading level 1 */
+h1 {
+    color: #800000;
+    padding-right: 15px;
+}
+
+/* Styling for paragraphs */
+p {
+    color: white;
+}
+
+/* Styling for an element with ID 'video' */
+#video {
+    border-radius: 25px;
+}
+
+/* Styling for list items */
+li {
+    list-style: none;
+    color: white;
+}
+
+/* Styling for span elements with border */
+span {
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Remove right border for the last span */
+span:last-child {
+    border-right: none;
+}
+
+/* Styling for a specific nested element with class 'box2' */
+.box2 h4 span i {
+    background-color: #ff0000;
+    color: rgb(206, 193, 193);
+}
+
+/* Styling for span elements with a specific font size */
+span {
+    font-size: 23px;
+}
+
+/* Styling for a button inside an element with class 'box2' */
+.box2 .button {
+    position: relative;
+}
+
+/* Styling for links inside the button with specific hover effects */
+.box2 .button a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: var(--primary);
+    color: wheat;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* Styling for the first button in the button group */
+.box2 .button a:nth-child(1) {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Styling for the second button in the button group */
+.box2 .button a:nth-child(2) {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Styling for the third button in the button group */
+.box2 .button a:nth-child(3) {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Styling on hover for the first button in the button group */
+.box2 .button a:hover:nth-child(1) {
+    background: var(--primary);
+}
+
+/* Styling on hover for the second button in the button group */
+.box2 .button a:hover:nth-child(2) {
+    background: var(--primary);
+}
+
+/* Styling on hover for the third button in the button group */
+.box2 .button a:hover:nth-child(3) {
+    background: var(--primary);
+}
+
+/* CSS variable definition for reuse */
+:root {
+    --primary: #ff3700;
+}
+
+/* Styling for an element with ID 'pi' */
+#pi {
+    font-size: 20px;
+    color: #800000;
+}

@@ -1,0 +1,312 @@
+html {
+  scroll-behavior: smooth;
+  /* Sets smooth scrolling  for the slider */
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* Sets the font family for the entire document */
+  background-image: url(../pictures/itwallpaper2.jpg);
+  /* Sets the background image for the body */
+  background-repeat: no-repeat;
+  /* Specifies that the background image should not repeat */
+  background-position: center;
+  /* Sets the position of the background image to the center */
+  background-size: cover;
+  /* Ensures the background image covers the entire background */
+  background-attachment: fixed;
+  /* Sets the background image to remain fixed as the user scrolls */
+  transition: 0.7s ease;
+  /* Adds a smooth transition effect to the background image- slider */
+}
+
+nav.menu {
+  display: flex; /* Use flexbox layout for the navigation menu */
+  background-color: transparent !important; /* Set the background color of the navigation menu to transparent */
+  justify-content: space-between; /* Distribute space evenly between menu items */
+  align-items: center; /* Center align items vertically within the menu */
+  position: sticky; /* Make the navigation menu stick to the top */
+  top: 0; /* Set the distance from the top for sticky positioning */
+  z-index: 101; /* Set the stacking order of the navigation menu */
+}
+
+.menu a:hover {
+  background: #FF4500; /* Change background color on hover */
+  color: #000; /* Set text color on hover */
+  font-size: 105%; /* Increase font size on hover */
+  transition: 0.5s; /* Add a smooth transition effect on hover */
+}
+
+a.active {
+  background: #800000; /* Set background color for active link */
+  margin-bottom: 0; /* Remove margin below active link */
+}
+
+
+#hello {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Set font family */
+  color: #fff; /* Set text color */
+  margin-left: 15px; /* Set left margin */
+  font-size: 40px; /* Set font size */
+  text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow */
+  float: left; /* Float element to the left */
+  margin-right: 100px; /* Set right margin */
+  transition: 0.5s; /* Add transition effect */
+}
+
+#hello::first-letter {
+  font-size: 50px; /* Increase font size of first letter */
+  font-weight: bold; /* Make first letter bold */
+  color: #c42525; /* Change color of first letter */
+  font-family: initial; /* Use default font family for first letter */
+}
+
+#hello:hover {
+  background: transparent; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.1); /* Scale element on hover */
+}
+
+.banner { /* עיצוב מיקום התוכן והצבע. */
+  position: relative; /* מיקום יחסי */
+  width: 100%; /* Set width to 100% */
+  min-height: 100vh; /* Set relative minimum height according to the screen */
+  padding: 0 80px; /* Set padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center align items vertically */
+}
+
+.banner::before { /* עיצוב מיקום התוכן והצבע. */
+  content: ''; /* Add content before element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position from the top */
+  left: 0; /* Position from the left */
+  right: 0; /* Position from the right */
+  bottom: 0; /* Position from the bottom */
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  background: rgba(0, 0, 0, 0.5); /* Set background color with opacity */
+}
+
+.banner .content { /* עיצוב מיקום התוכן . */
+  position: relative; /* Set position to relative */
+  max-width: 550px; /* Set maximum width-קיבוע */
+  display: none; /* apply content-בלי זה הכל יהיה מבולגן, הכל יהיה בחוץ */
+  transition: 0.5s; /* Add transition effect */
+}
+
+.content.active { /* זה הופך את התוכן לגלוי וגורם לו להופיע בגודלו הרגיל. */
+  display: block; /* Show content when active-home page saw movie */
+  transform: scale(1); /* Apply scale transformation */
+}
+
+.IT { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position relative to the nearest ancestor */
+  bottom: 140px; /* Position from the bottom */
+  width: 200px; /* Set width */
+  height: 150px; /* Set height */
+}
+
+.evil_dead { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 150px; /* Position from the bottom */
+  width: 250px; /* Set width */
+  height: 150px; /* Set height */
+}
+
+.witch { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 120px; /* Position from the bottom */
+  width: 200px; /* Set width */
+  height: 160px; /* Set height */
+}
+
+.martyrs { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 100px; /* Position from the bottom */
+  width: 200px; /* Set width */
+  height: 200px; /* Set height */
+}
+
+.scream { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 120px; /* Position from the bottom */
+  width: 200px; /* Set width */
+  height: 150px; /* Set height */
+}
+
+.blair { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 140px; /* Position from the bottom */
+  width: 200px; /* Set width */
+  height: 200px; /* Set height */
+}
+
+.x { /* עיצוב כותרת הסרט (PNG).*/
+  position: absolute; /* Set position to absolute */
+  bottom: 140px; /* Position from the bottom */
+  width: 150px; /* Set width */
+  height: 150px; /* Set height */
+}
+
+h4 span:last-child::after { /* הוספת כוכב זהוב לדירוג הסרט.*/
+  content: ' \2605'; /* Add content after last span */
+  color: gold; /* Set color of content */
+}
+
+:root { /* הגדרת צבע שבו אשתמש שוב ושוב לכל מיני דברים  כמו כפתורים.*/
+  --primary: #ff3700; /* Define custom CSS variable */
+}
+
+.banner .content h4 { /* עיצוב אותיות התוכן כמו גיל צפייה דירוג וכו'.*/
+  color: #fff; /* Set text color */
+  font-weight: 400; /* Set font weight */
+  font-size: 20px; /* Set font size */
+  margin-top: 180px; /* Set top margin */
+}
+
+span { /* עיצוב המילים עם מסגרות של H4.*/
+  padding: 0 10px; /* Set padding */
+  border-right: 1px solid rgba(255, 255, 255, 0.5); /* Add right border */
+}
+
+span:last-child { /*עיצוב המסגרת האחרונה(הסרה).*/
+  border-right: none; /* Remove right border for last span */
+}
+
+.banner .content h4 span i { /* עיצוב ספציפי של גיל צפייה.*/
+  background-color: #ff0000; /* Set background color */
+  color: rgb(255, 255, 255); /* Set text color */
+}
+
+.banner .content p { /* עיצוב כותרת הסרט (PNG).*/
+  color: rgb(255, 255, 255); /* עיצוב הפסקה. */
+}
+
+.banner .content .button { /* עיצוב סוג מיקום הכפתורים.*/
+  position: relative; /* Set position to relative */
+}
+
+.banner .content .button a { /* עיצוב הכפתורים.*/
+  position: relative; /* Set position to relative */
+  display: inline-block; /* Display as inline-block */
+  padding: 6px 20px; /* Set padding */
+  margin-right: 10px; /* Set right margin */
+  margin-top: 5px; /* Set top margin */
+  margin-bottom: 5px; /* Set bottom margin */
+  background: var(--primary); /* Set background color */
+  color: wheat; /* Set text color */
+  text-decoration: none; /* Remove text decoration */
+  font-weight: 500; /* Set font weight */
+  letter-spacing: 1px; /* Set letter spacing */
+  text-transform: uppercase; /* Transform text to uppercase */
+  transition: 1s; /* Add transition effect */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.banner .content .button a:nth-child(2) { /* עיצוב הכפתור השני.*/
+  background: rgba(0, 0, 0, 0.5); /* Set background color */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Set border */
+}
+
+.banner .content .button a:hover:nth-child(2) { /* עיצוב הרחיפה של הכפתור השני.*/
+  background: var(--primary); /* Change background color on hover */
+}
+
+.banner .content .button a:nth-child(1) { /* עיצוב הכפתור הראשון.*/
+  background: rgba(0, 0, 0, 0.5); /* Set background color */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Set border */
+}
+
+.banner .content .button a:hover:nth-child(1) { /* עיצוב הרחיפה של הכפתור הראשון*/
+  background: var(--primary); /* Change background color on hover */
+}
+
+.banner .carousel-box { /* עיצוב קופסת הסליידר.*/
+  position: relative; /* Set position to relative */
+  min-width: 500px; /* Set minimum width */
+  background: rgba(0, 0, 0, 0.2); /* Set background color with opacity */
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Add border */
+  backdrop-filter: blur(2px); /* Apply backdrop filter with blur */
+  border-radius: 10px; /* Set border radius */
+}
+
+.carousel .carousel-item { /* מיקום הפוסטרים בסליידר*/
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+}
+
+.carousel .carousel-item img { /* עיצוב תמונת הפוסטר (PNG).*/
+  max-width: 235px; /* Set maximum width */
+  border-radius: 10px; /* Set border radius */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+.play { /* עיצוב כפתור הטריילר*/
+  position: absolute; /* Set position to absolute */
+  bottom: 70px; /* Position from the bottom */
+  left: 100px; /* Position from the left */
+  display: inline-flex; /* Use inline-flex layout */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Center align items vertically */
+  color: rgb(255, 255, 255); /* Set text color */
+  text-decoration: none; /* Remove text decoration */
+  text-transform: uppercase; /* Transform text to uppercase */
+  font-weight: 500; /* Set font weight */
+  cursor: pointer !important; /* Set cursor to pointer */
+  transition: 0.3s; /* Add transition effect */
+}
+
+.play:hover { /* עיצוב רחיפה של הטריילר*/
+  color: var(--primary); /* Change text color on hover */
+}
+
+.trailer { /* עיצוב הטריילר*/
+  position: fixed; /* Set position to fixed */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center element horizontally and vertically */
+  z-index: 100; /* Set z-index */
+  width: 100; /* Set width */
+  height: 100; /* Set height */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  backdrop-filter: blur(20px); /* Apply backdrop filter with blur */
+  visibility: hidden; /* doesnt Hide element  */
+  opacity: 0; /* Set opacity to 0 */
+  transition: 0.5s; /* Add transition effect */
+}
+
+.trailer.active { /* עיצוב הטרילר כאשר הוא פעיל*/
+  visibility: visible; /* Show element when active */
+  opacity: 1; /* Set opacity to 1 when active */
+}
+
+.trailer video { /* עיצוב סרטון הטריילר (PNG).*/
+  max-width: 900px; /* Set maximum width */
+  outline: none; /* Remove outline */
+}
+
+
+.close { /* עיצוב כתפור סגירה של הטריילר (PNG).*/
+  position: absolute; /* Set position to absolute */
+  top: 30px; /* Position from the top */
+  right: 30px; /* Position from the right */
+  cursor: pointer; /* Set cursor to pointer */
+  filter: invert(1); /* Invert color */
+  max-width: 30px; /* Set maximum width */
+}
+
+footer { /* עיצוב הפוטר*/
+  background-color: #000000; /* Set background color */
+  color: #FF5733; /* Set text color */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Set padding */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Set font family */
+  letter-spacing: 3px; /* Set letter spacing */
+  font-size: 25px; /* Set font size */
+}
