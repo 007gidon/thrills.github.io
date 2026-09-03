@@ -1,7 +1,7 @@
 /* Set the font family and background image for the entire body */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url('../../pictures/green_room_wallpaperjpg.jpg'); 
+    background-image: url('../../pictures/green_room_wallpaper.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
