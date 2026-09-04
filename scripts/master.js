@@ -40,4 +40,13 @@ function addToMyList(title) {
 
 
 
-
+window.addEventListener('DOMContentLoaded', () => {
+    alert(
+        "שימו לב! 🖥️\n\n" +
+        "כדי ליהנות מהחוויה המלאה של האתר, מומלץ בחום:\n" +
+        "• לפתוח במחשב בלבד (לא בפלאפון).\n" +
+        "• להשתמש בדפדפן Google Chrome.\n" +
+        "• לכוון את הזום ל-150%.\n\n" +
+        "צפייה מהנה!"
+    );
+});
