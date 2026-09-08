@@ -22,7 +22,7 @@ function addToMyList(title) {
 $(document).ready(function () {
     // בדיקה האם המשתמש כבר ביקר באתר בעבר
     if (!localStorage.getItem('visited_site')) {
-        alert('ברוכים הבאים לפאקניג אתר שלי, בבקשה לפתוח אותו על 150% זום כי אני נכה');
+        alert('ברוכים הבאים לפאקניג יואו אתר שלי, בבקשה לפתוח אותו על 150% זום כי אני נכה');
         localStorage.setItem('visited_site', 'true');
     }
 
