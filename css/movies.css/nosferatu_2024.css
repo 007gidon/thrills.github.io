@@ -85,7 +85,7 @@ footer {
     width: 1120px;
     padding: 30px;
     margin: 30px auto;
-    background: rgba(12, 8, 8, 0.92);
+    background: rgba(12, 8, 8, 0.8);
     border: 1px solid rgba(139, 0, 0, 0.3);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.95), inset 0 0 60px rgba(0, 0, 0, 0.8);
     position: relative;

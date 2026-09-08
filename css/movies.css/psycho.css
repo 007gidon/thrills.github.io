@@ -1,7 +1,7 @@
 /* Set the font family and background image for the entire body */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(/pictures/psycho\ wallpaper2.jpg);
+    background-image: url('../../pictures/psycho wallpaper2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,12 +11,15 @@ body {
 /* Style for the navigation menu */
 nav.menu {
     display: flex;
-    background-color: transparent !important; /* Set transparent background for navigation menu */
+    background-color: transparent !important;
+    /* Set transparent background for navigation menu */
     justify-content: space-between;
     align-items: center;
-    position: sticky; /* Sticky navigation at the top of the page */
+    position: sticky;
+    /* Sticky navigation at the top of the page */
     top: 0;
-    z-index: 101; /* Ensure the navigation is above other elements */
+    z-index: 101;
+    /* Ensure the navigation is above other elements */
 }
 
 /* Style for menu links on hover */
